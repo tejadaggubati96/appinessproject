@@ -1,0 +1,74 @@
+<nav class="navbar navbar-toggleable-md navbar-dark bg-dark">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="JavaScript:void(0)">Expenseev</a>
+  </nav>
+  
+  <!-- the jumbotron -->
+  <div class="jumbotron bg-warning">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+    <app-sidebar></app-sidebar>
+          <main class="col bg-faded py-3">
+            <form (ngSubmit)="onupdateexpense(e)" #e="ngForm">
+             <div class="row mt-5">
+                <div class="col-1">
+                 </div>
+              <div class="col-2">
+                  <label class="label" for="staticEmail2" >Category</label>
+               </div>
+               <div class="col-4">
+                  <input type="text" [(ngModel)]="item.category" name="category"  class="form-control" placeholder="updating category" id="staticEmail2">
+              </div>
+              <div class="col-4">
+                 
+                </div>
+             </div>
+             <div class="row mt-5">
+                <div class="col-1">
+                 </div>
+              <div class="col-2">
+                  <label class="label" for="staticEmail2" >Item Name</label>
+               </div>
+               <div class="col-4">
+                  <input type="text" [(ngModel)]="item.ItemName" name="ItemName"  class="form-control" placeholder="updating item name" id="staticEmail2">
+              </div>
+              <div class="col-4">
+                 
+                </div>
+             </div>
+             <div class="row mt-5">
+                <div class="col-1">
+                 </div>
+              <div class="col-2">
+                  <label class="label" for="staticEmail2" >Quantity</label>
+               </div>
+               <div class="col-4">
+                  <input type="text" [(ngModel)]="item.Quantity" name="Quantity"  class="form-control" placeholder="updating quantity" id="staticEmail2">
+              </div>
+              <div class="col-4">
+                 
+                </div>
+             </div>
+             <div class="row mt-5">
+                <div class="col-1">
+                 </div>
+              <div class="col-2">
+                  <label class="label" for="staticEmail2" >Expiry Date</label>
+               </div>
+               <div class="col-4">
+                  <input type="text" [(ngModel)]="item.Expensedate" name="Expensedate"  class="form-control" placeholder="updating expiry date" id="staticEmail2">
+              </div>
+              <div class="col-4">
+                  <button type="submit" class="btn btn-info mb-2">Update</button>
+                </div>
+             </div>
+
+            </form>
+          </main>
+        
+      </div>
+  </div>
+  </div>
+  
